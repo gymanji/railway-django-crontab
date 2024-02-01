@@ -174,6 +174,7 @@ ACCOUNT_AUTHENTICATION_METHOD = "email"
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_UNIQUE_EMAIL = True
 
+# https://pypi.org/project/django-crontab/ 
 CRONJOBS = [
-    ("* * * * *", "cron.simple_print_log")
+    ("* * * * *", "django_project.cron.simple_print_log")
 ]
